@@ -5,7 +5,7 @@ Models:
 - Keras Neural Network
 - Google AutoML
 
-The main script [Twitter_public.ipynb](https://github.com/francisfjin/twitter-NLP/blob/main/Twitter_public.ipynb) uses Tweepy API to search for a user-defined set of tweets given keyword of your choosing. Then it creates a training set on labeled data using Twitter API and pre-processes using Natural Language Processing libraries: spacy, nltk, re. It uses an awesome corpus file from Niek Sanders [here](https://github.com/karanluthra/twitter-sentiment-training/blob/master/corpus.csv), which has ID keys to 5000 sentiment-labeled tweets, which we then grab through the Twitter API as to comply with their Developer API usage rules. 
+The main script [Twitter_public.ipynb](https://github.com/francisfjin/twitter-NLP/blob/main/Twitter_public.ipynb) uses Tweepy API to search for a user-defined set of tweets given keyword of your choosing. Then it creates a training set on labeled data using an awesome corpus file from Niek Sanders [here](https://github.com/karanluthra/twitter-sentiment-training/blob/master/corpus.csv), with ID keys to 5000 sentiment-labeled tweets, which we then grab through the Twitter API as to comply with their Developer API usage rules. Pre-processing is done using Natural Language Processing libraries: spacy, nltk, re.
 
 Training data is then fed into two models: Keras Neural Network and Google AutoML.
 
@@ -21,11 +21,12 @@ The notebooks are best run in Google Colab for seamless execution. You'll have t
 
 For Twitter API, you will need to input your own API keys from your [developer account](https://developer.twitter.com/en/apply-for-access). This is necessary for building the Training Set 
 
-Packages required not already in Anaconda Suite: 
+Packages required: 
 - Tweepy
 - Twitter 
 - Spacy 
 - nltk
+- re
 - Keras
 - Google Cloud AutoML
 
