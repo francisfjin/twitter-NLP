@@ -19,9 +19,9 @@ AutoML: Writes training set to CSV for Google AutoML required format. Then in Go
 
 The notebooks are best run in Google Colab for seamless execution. You'll have to input your own file paths for your GCP locations and [mount your Drive](https://colab.research.google.com/notebooks/io.ipynb). 
 
-For Twitter API, you will need to input your own API keys from your [developer account](https://developer.twitter.com/en/apply-for-access). This is necessary for building the Training Set 
+For Twitter API, you will need to input your own API keys from your [developer account](https://developer.twitter.com/en/apply-for-access). This is necessary for building the Training Set.
 
-Packages required: 
+Python packages required: 
 - Tweepy
 - Twitter 
 - Spacy 
