@@ -33,6 +33,6 @@ Python packages required:
 
 [#blackpinkinyourarea](https://www.youtube.com/watch?v=ioNng23DkIM)
 
-![](blackpink.gif)
+![](tenor.gif)
 
 
