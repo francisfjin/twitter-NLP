@@ -1,5 +1,5 @@
 # twitter-NLP
-Sentiment Analysis on twitter data using NLP to analyze the K-pop Industry
+Sentiment Analysis on twitter data using NLP to analyze the K-pop industry #blackpinkinyourarea
 
 The notebooks are best run in Google Colab for seamless execution, as part of the project uses GCP's AutoML as an alternative comparison to my original model. As such, you'll have to input your own file paths for your GCP locations and [mount your Drive](https://colab.research.google.com/notebooks/io.ipynb). 
 
