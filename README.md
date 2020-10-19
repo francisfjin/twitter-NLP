@@ -1,5 +1,5 @@
-# twitter-NLP
-## Sentiment Analysis on K-pop industry [#blackpinkinyourarea](https://www.youtube.com/watch?v=ioNng23DkIM)
+## Sentiment Analysis on K-pop industry
+[#blackpinkinyourarea](https://www.youtube.com/watch?v=ioNng23DkIM)
 
 Models: 
 - Keras Neural Network (Sequential)
