@@ -1,5 +1,4 @@
 ## Sentiment Analysis on K-pop groups with Neural Networks
-[#blackpinkinyourarea](https://www.youtube.com/watch?v=ioNng23DkIM)
 
 Models: 
 - Keras Neural Network
@@ -30,6 +29,7 @@ Python packages required:
 - Keras
 - Google Cloud AutoML
 
+[#blackpinkinyourarea](https://www.youtube.com/watch?v=ioNng23DkIM)
 ![](blackpink.gif)
 
 
