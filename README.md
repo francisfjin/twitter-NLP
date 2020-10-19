@@ -2,7 +2,7 @@
 [#blackpinkinyourarea](https://www.youtube.com/watch?v=ioNng23DkIM)
 
 Models: 
-- Keras Neural Network (Sequential)
+- Keras Neural Network
 - Google AutoML
 
 The main script [Twitter_public.ipynb](https://github.com/francisfjin/twitter-NLP/blob/main/Twitter_public.ipynb) uses Tweepy API to search for a user-defined set of tweets given keyword of your choosing. Then it creates a training set on labeled data using Twitter API and pre-processes using Natural Language Processing libraries: spacy, nltk, re. It uses an awesome corpus file from Niek Sanders [here](https://github.com/karanluthra/twitter-sentiment-training/blob/master/corpus.csv), which has ID keys to 5000 sentiment-labeled tweets, which we then grab through the Twitter API as to comply with their Developer API usage rules. 
