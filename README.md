@@ -30,5 +30,6 @@ Python packages required:
 - Keras
 - Google Cloud AutoML
 
+![](ezgif.com-gif-maker (1).gif)
 
 
