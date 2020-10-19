@@ -1,4 +1,4 @@
-## Sentiment Analysis on K-pop industry
+## Sentiment Analysis on K-pop Industry with Neural Networks
 [#blackpinkinyourarea](https://www.youtube.com/watch?v=ioNng23DkIM)
 
 Models: 
