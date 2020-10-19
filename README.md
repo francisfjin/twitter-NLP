@@ -22,6 +22,6 @@ Predictions:
 
 [Twitter_public.ipynb](https://github.com/francisfjin/twitter-NLP/blob/main/Twitter_public.ipynb): has a section that takes a search set of tweets and exports each one to a txt file as per AutoML's input file requirements, also writes a CSV in required format.
 
-[AutoMLpythonclient_public.ipynb](https://github.com/francisfjin/twitter-NLP/blob/main/AutoMLpythonclient_public.ipynb): Python client to run the deployed model. Requires input GCP credentials, test files must saved to GCP storage bucket. 
+[AutoMLpythonclient_public.ipynb](https://github.com/francisfjin/twitter-NLP/blob/main/AutoMLpythonclient_public.ipynb): Python client to run the deployed model. Requires input GCP credentials, test files must saved to GCP storage bucket before running predictions. 
 
 
