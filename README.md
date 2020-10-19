@@ -10,6 +10,7 @@ Packages required not already in Anaconda Suite:
 - Twitter 
 - Spacy 
 - nltk
+- Keras
 - Google Cloud AutoML
 
 ## AutoML 
