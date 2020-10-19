@@ -1,5 +1,4 @@
-# twitter-NLP
-Sentiment Analysis on Twitter data using Keras Neural Network and Google AutoML for NLP on K-pop industry [#blackpinkinyourarea](https://www.youtube.com/watch?v=ioNng23DkIM)
+# Sentiment Analysis on Twitter data using Keras Neural Network and Google AutoML for NLP on K-pop industry [#blackpinkinyourarea](https://www.youtube.com/watch?v=ioNng23DkIM)
 
 The main script [Twitter_public.ipynb](https://github.com/francisfjin/twitter-NLP/blob/main/Twitter_public.ipynb) lets you access Twitter API and search for a user-defined set of tweets given keyword of your choosing. Then it creates a training set through Twitter which will be fed into both a Keras Neural Network 
 
