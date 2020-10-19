@@ -1,5 +1,7 @@
 ## Twitter Sentiment Analysis with Neural Networks: K-pop Industry
 
+This project utilizes machine learning and Natural Language Processing to conduct Sentiment Analysis on media and entertainment, specifically the K-Pop industry which has become one of the [most popular musical genres in the world](https://www.rollingstone.com/music/music-features/bts-kpop-albums-bands-global-takeover-707139/) 
+
 Models: 
 - Keras Neural Network
 - Google AutoML
