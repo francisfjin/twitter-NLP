@@ -1,10 +1,25 @@
-# Sentiment Analysis on Twitter data using Keras Neural Network and Google AutoML for NLP on K-pop industry [#blackpinkinyourarea](https://www.youtube.com/watch?v=ioNng23DkIM)
+# twitter-NLP
+## Sentiment Analysis on K-pop industry [#blackpinkinyourarea](https://www.youtube.com/watch?v=ioNng23DkIM)
 
-The main script [Twitter_public.ipynb](https://github.com/francisfjin/twitter-NLP/blob/main/Twitter_public.ipynb) lets you access Twitter API and search for a user-defined set of tweets given keyword of your choosing. Then it creates a training set through Twitter which will be fed into both a Keras Neural Network 
+Models: 
+- Keras Neural Network (Sequential)
+- Google AutoML
 
-The notebooks are best run in Google Colab for seamless execution, as part of the project uses GCP's [AutoML](https://cloud.google.com/automl) as an alternative comparison to my original model. As such, you'll have to input your own file paths for your GCP locations and [mount your Drive](https://colab.research.google.com/notebooks/io.ipynb). 
+The main script [Twitter_public.ipynb](https://github.com/francisfjin/twitter-NLP/blob/main/Twitter_public.ipynb) uses Tweepy API to search for a user-defined set of tweets given keyword of your choosing. Then it creates a training set on labeled data using Twitter API and pre-processes using Natural Language Processing libraries: spacy, nltk, re. It uses an awesome corpus file from Niek Sanders [here](https://github.com/karanluthra/twitter-sentiment-training/blob/master/corpus.csv), which has ID keys to 5000 sentiment-labeled tweets, which we then grab through the Twitter API as to comply with their Developer API usage rules. 
 
-For Twitter API, you will need to input your own API keys from your [developer account](https://developer.twitter.com/en/apply-for-access). This is necessary for building the Training Set using a corpus file from amazing Niek Sanders - you can get the file containing the corpus from this [link](https://github.com/karanluthra/twitter-sentiment-training/blob/master/corpus.csv). It has ID keys to 5000 sentiment-labeled tweets, which we then grab through the Twitter API, but do not save any unnecessary information, as to comply with their Developer API usage rules.  
+Training data is then fed into two models: Keras Neural Network and Google AutoML.
+
+Keras Neural Network: a TFIDF transformation is performed on the pre-processed training set along with Glove embedding, then fed into a Sequential Keras model with Dropout, to yield (~88%/81%) accuracy scores on training/validation sets. 
+
+AutoML: Writes training set to CSV for Google AutoML required format. Then in Google Cloud Platform an [AutoML model](https://cloud.google.com/automl)for NLP Sentiment Analysis can be trained on the set. For predictions the search set of tweets is exported to individual txt files as per AutoML's [BatchPredict input file requirements](https://cloud.google.com/natural-language/automl/docs/predict?authuser=3), it also writes a CSV of the keys in the required format. 
+
+[AutoMLpythonclient_public.ipynb](https://github.com/francisfjin/twitter-NLP/blob/main/AutoMLpythonclient_public.ipynb) is the Python client to run the deployed model. Requires input GCP credentials, test files must saved to GCP storage bucket before running predictions.   
+
+## Notes
+
+The notebooks are best run in Google Colab for seamless execution. You'll have to input your own file paths for your GCP locations and [mount your Drive](https://colab.research.google.com/notebooks/io.ipynb). 
+
+For Twitter API, you will need to input your own API keys from your [developer account](https://developer.twitter.com/en/apply-for-access). This is necessary for building the Training Set 
 
 Packages required not already in Anaconda Suite: 
 - Tweepy
@@ -14,16 +29,5 @@ Packages required not already in Anaconda Suite:
 - Keras
 - Google Cloud AutoML
 
-## AutoML 
-
-Training Set: 
-
-[Twitter_public.ipynb](https://github.com/francisfjin/twitter-NLP/blob/main/Twitter_public.ipynb) has a section that writes training set to CSV in Google AutoML required format. Then an AutoML model for NLP Sentiment Analysis in Google Cloud Platform can be trained on the set.  
-
-Predictions: 
-
-[Twitter_public.ipynb](https://github.com/francisfjin/twitter-NLP/blob/main/Twitter_public.ipynb): has a section that takes a search set of tweets and exports each one to a txt file as per AutoML's input file requirements, also writes a CSV in required format.
-
-[AutoMLpythonclient_public.ipynb](https://github.com/francisfjin/twitter-NLP/blob/main/AutoMLpythonclient_public.ipynb): Python client to run the deployed model. Requires input GCP credentials, test files must saved to GCP storage bucket before running predictions. 
 
 
