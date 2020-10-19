@@ -1,5 +1,7 @@
 # twitter-NLP
-Sentiment Analysis on twitter data using NLP on K-pop industry [#blackpinkinyourarea](https://www.youtube.com/watch?v=ioNng23DkIM)
+Sentiment Analysis on Twitter data using Keras Neural Network and Google AutoML for NLP on K-pop industry [#blackpinkinyourarea](https://www.youtube.com/watch?v=ioNng23DkIM)
+
+The main script [Twitter_public.ipynb](https://github.com/francisfjin/twitter-NLP/blob/main/Twitter_public.ipynb) lets you access Twitter API and search for a user-defined set of tweets given keyword of your choosing. Then it creates a training set through Twitter which will be fed into both a Keras Neural Network 
 
 The notebooks are best run in Google Colab for seamless execution, as part of the project uses GCP's [AutoML](https://cloud.google.com/automl) as an alternative comparison to my original model. As such, you'll have to input your own file paths for your GCP locations and [mount your Drive](https://colab.research.google.com/notebooks/io.ipynb). 
 
