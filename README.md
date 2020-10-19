@@ -1,4 +1,4 @@
-## Sentiment Analysis on K-pop groups with Neural Networks
+## Twitter Sentiment Analysis with Neural Networks (Kpop analysis) 
 
 Models: 
 - Keras Neural Network
