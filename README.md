@@ -30,6 +30,6 @@ Python packages required:
 - Keras
 - Google Cloud AutoML
 
-[](blackpink.gif)
+![](blackpink.gif)
 
 
