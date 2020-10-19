@@ -1,7 +1,7 @@
 # twitter-NLP
 Sentiment Analysis on twitter data using NLP to analyze the K-pop industry [#blackpinkinyourarea](https://www.youtube.com/watch?v=ioNng23DkIM)
 
-The notebooks are best run in Google Colab for seamless execution, as part of the project uses GCP's AutoML as an alternative comparison to my original model. As such, you'll have to input your own file paths for your GCP locations and [mount your Drive](https://colab.research.google.com/notebooks/io.ipynb). 
+The notebooks are best run in Google Colab for seamless execution, as part of the project uses GCP's [AutoML](https://cloud.google.com/automl) as an alternative comparison to my original model. As such, you'll have to input your own file paths for your GCP locations and [mount your Drive](https://colab.research.google.com/notebooks/io.ipynb). 
 
 For Twitter API, you will need to input your own API keys from your [developer account](https://developer.twitter.com/en/apply-for-access). This is necessary for building the Training Set using a corpus file from amazing Niek Sanders - you can get the file containing the corpus from this [link](https://github.com/karanluthra/twitter-sentiment-training/blob/master/corpus.csv). It has ID keys to 5000 sentiment-labeled tweets, which we then grab through the Twitter API, but do not save any unnecessary information, as to comply with their Developer API usage rules.  
 
