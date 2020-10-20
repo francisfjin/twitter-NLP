@@ -1,4 +1,5 @@
 ## Twitter Sentiment Analysis with Neural Networks: K-pop Industry
+![](tenor.gif)
 
 This project utilizes machine learning and Natural Language Processing to conduct Sentiment Analysis for media & entertainment in Asia, specifically the K-Pop industry which has become one of the [most popular musical genres in the world.](https://www.rollingstone.com/music/music-features/bts-kpop-albums-bands-global-takeover-707139/) 
 
@@ -34,6 +35,6 @@ Python packages required:
 
 [#blackpinkinyourarea](https://www.youtube.com/watch?v=ioNng23DkIM)
 
-![](tenor.gif)
+
 
 
