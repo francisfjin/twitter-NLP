@@ -4,8 +4,8 @@
 This project utilizes machine learning and Natural Language Processing to conduct Sentiment Analysis for media & entertainment in Asia, specifically the K-Pop industry which has become one of the [most popular musical genres in the world.](https://www.rollingstone.com/music/music-features/bts-kpop-albums-bands-global-takeover-707139/) 
 
 _Models_: 
-- Keras Neural Network
-- Google AutoML
+- _Keras Neural Network_
+- _Google AutoML_
 
 The main script [Twitter_public.ipynb](https://github.com/francisfjin/twitter-NLP/blob/main/Twitter_public.ipynb) uses Tweepy API to search for a user-defined set of tweets given keyword of your choosing. Then it creates a training set on labeled data using an awesome corpus file from Niek Sanders [here](https://github.com/karanluthra/twitter-sentiment-training/blob/master/corpus.csv), with ID keys to 5000 sentiment-labeled tweets, which we then grab through the Twitter API as to comply with their Developer API usage rules. Pre-processing is done using Natural Language Processing libraries: spacy, nltk, re.
 
