@@ -22,6 +22,7 @@ AutoML: Writes training set to CSV for Google AutoML required format. Then in Go
 
 <img src="https://github.com/francisfjin/twitter-NLP/blob/main/automl.png" width="50%">
 
+
 [AutoMLpythonclient_public.ipynb](https://github.com/francisfjin/twitter-NLP/blob/main/AutoMLpythonclient_public.ipynb) is the Python client to run the deployed model. Requires input GCP credentials, and test files must saved to GCP storage bucket before running predictions.   
 
 
