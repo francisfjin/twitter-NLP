@@ -3,6 +3,8 @@
 
 This project utilizes machine learning and Natural Language Processing to conduct Sentiment Analysis for media & entertainment in Asia, specifically the K-Pop industry which has become one of the [most popular musical genres in the world.](https://www.rollingstone.com/music/music-features/bts-kpop-albums-bands-global-takeover-707139/) 
 
+This insight can be used by players in the media and entertainment industry to measure sentiment, social climate, popularity, and inform numerous business practices such as marketing, promotion, and strategy. 
+
 #### Models 
 - _Keras Neural Network_
 - _Google AutoML_
