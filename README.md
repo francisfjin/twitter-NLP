@@ -5,6 +5,8 @@ This project utilizes machine learning and Natural Language Processing to conduc
 
 This insight can be used to measure current social sentiment, climate, popularity, and inform numerous business practices such as marketing, promotion, and strategy, album releases, etc. 
 
+Final Report [here!](https://github.com/francisfjin/twitter-NLP/blob/main/finalreport.pdf)
+
 #### Models 
 - _Keras Neural Network_
 - _Google AutoML_
