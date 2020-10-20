@@ -16,7 +16,7 @@ Keras Neural Network: a TFIDF transformation is performed on the pre-processed t
 AutoML: Writes training set to CSV for Google AutoML required format. Then in Google Cloud Platform an [AutoML model](https://cloud.google.com/automl) for NLP Sentiment Analysis can be trained on the set. For predictions the search set of tweets is exported to individual txt files as per AutoML's [BatchPredict input file requirements](https://cloud.google.com/natural-language/automl/docs/predict?authuser=3), it also writes a CSV of the keys in the required format. 
 
 
-<img src="https://github.com/francisfjin/twitter-NLP/blob/main/automl.png" width="40%">
+<img src="https://github.com/francisfjin/twitter-NLP/blob/main/automl.png" width="60%">
 
 [AutoMLpythonclient_public.ipynb](https://github.com/francisfjin/twitter-NLP/blob/main/AutoMLpythonclient_public.ipynb) is the Python client to run the deployed model. Requires input GCP credentials, and test files must saved to GCP storage bucket before running predictions.   
 
