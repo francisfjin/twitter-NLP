@@ -6,13 +6,14 @@
 
 ## Topic
 
-This project seeks to gain insight into trends into the ever-evolving and increasingly popular Korean pop music industry, deemed “K-pop”, which has risen to one of the top musical genres in the world. By using facets of Natural Language processing and machine learning to conduct Sentiment Analysis on Twitter data, the analysis measures trends in popularity as well as variations amongst different K-pop groups. 
+This project seeks to gain insight into trends into the ever-evolving and increasingly popular Korean pop music industry, deemed “K-pop”, which has risen to one of the [top musical genres in the world]((https://www.rollingstone.com/music/music-features/bts-kpop-albums-bands-global-takeover-707139/). By using facets of Natural Language processing and machine learning to conduct [Sentiment Analysis](https://www.google.com/search?q=sentiment+analysis&rlz=1C5CHFA_enUS911US911&oq=sentiment+analysis&aqs=chrome..69i57j69i59l3j69i60l3.1648j0j7&sourceid=chrome&ie=UTF-8) on Twitter data, the analysis measures trends in popularity as well as variations amongst different K-pop groups. 
 
-Ultimately, the project attempts to test the hypothesis that Twitter sentiment is a useful signal for the overall popularity and success of a musical artist group. 
+Ultimately, the project attempts to test the hypothesis that _Twitter sentiment is a useful signal for the overall popularity and success of a musical artist group._
 
+Main script [here](https://github.com/francisfjin/twitter-NLP/blob/main/Twitter_public.ipynb)
 ## Metric
 
-The metric we will use to test this hypothesis is the overall score the model achieves, when comparing its rankings of the top 10 K-pop groups right now to the ranking order done by Koreaboo, one of the largest online K-pop content media platforms (https://www.koreaboo.com/news/top-30-popular-kpop-groups-korea-right-now/). 
+The metric we will use to test this hypothesis is the overall score the model achieves, when comparing its rankings of the top 10 K-pop groups right now to the ranking order done by Koreaboo, one of the largest online K-pop content media platforms [here](https://www.koreaboo.com/news/top-30-popular-kpop-groups-korea-right-now/). 
 
 A strong overlap will signify the model’s ability to predict a K-pop groups popularity using Twitter sentiment, and overall popularity is known to be strongly correlated with the overall success of a musical group. 
 
@@ -20,17 +21,17 @@ A strong overlap will signify the model’s ability to predict a K-pop groups po
 
 _Search set_
 
-Using Tweepy API, a query function retrieves the last 3,000 tweets based on the following artist names as keywords: ‘BTS’, ‘TWICE’, ‘Red Velvet’, ‘ITZY’, ‘BLACKPINK’, ‘Mamamoo’, ‘Oh My Girl’, ‘Girls’ Generation’, ‘IZ*ONE’, ‘Lovelyz’. 
+Using [Tweepy API](http://docs.tweepy.org/en/latest/api.html), a query function retrieves the last 3,000 tweets based on the following artist names as keywords: ‘BTS’, ‘TWICE’, ‘Red Velvet’, ‘ITZY’, ‘BLACKPINK’, ‘Mamamoo’, ‘Oh My Girl’, ‘Girls’ Generation’, ‘IZ*ONE’, ‘Lovelyz’. 
 
 _Training Set_
 
-Built with labeled data using a corpus file with ID keys to 5000 sentiment-labeled tweets, which we grab through the Twitter API, without saving any additional information as to comply with the Twitter Developer API usage rules. Then it is written to CSV and mapped to numeric values 0 for “negative”, 1 for “neutral”, 2 for “positive”, and 4 for “irrelevant”.
+Built with labeled data using a corpus file with ID keys to 5000 sentiment-labeled tweets, which we grab through the [Twitter API](https://developer.twitter.com/en/docs/twitter-api), without saving any additional information as to comply with the Twitter Developer API usage rules. Then it is written to CSV and mapped to numeric values 0 for “negative”, 1 for “neutral”, 2 for “positive”, and 4 for “irrelevant”.
 
 ![valuecounts](/images/valuecounts.png)
 
 _Pre-Processing_
 
-Commonly in Natural language processing endeavors, text must be processed to be suitable for modeling. Here we use the following Python libraries such as nltk, re, spacy, to edit our texts to convert to lowercase, remove whitespace, remove personal pronouns, remove URLs and the # sign in hashtags, and simplify repeated characters. We then filter out the entries labeled “4” (irrelevant). 
+Commonly in Natural language processing endeavors, text must be processed to be suitable for modeling. Here we use the following Python libraries such as [nltk](https://www.nltk.org/), [re](https://docs.python.org/3/library/re.html), [spacy](https://spacy.io/), to edit our texts to convert to lowercase, remove whitespace, remove personal pronouns, remove URLs and the # sign in hashtags, and simplify repeated characters. We then filter out the entries labeled “4” (irrelevant). 
 
 _Feature Selection_
 
