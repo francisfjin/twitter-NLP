@@ -24,6 +24,8 @@ _Search set_
 
 Using [Tweepy API](http://docs.tweepy.org/en/latest/api.html), a query function retrieves the last 3,000 tweets based on the following artist names as keywords: ‘BTS’, ‘TWICE’, ‘Red Velvet’, ‘ITZY’, ‘BLACKPINK’, ‘Mamamoo’, ‘Oh My Girl’, ‘Girls’ Generation’, ‘IZ*ONE’, ‘Lovelyz’. 
 
+Note that some groups with names such as “red velvet” have other common use linguistic use cases such as “red velvet cake”, and are thus subject to more noise in the data. We solve this by re-running the Search Set on those groups with “red velvet kpop”, to target only the tweets pointing to the musical group. 
+
 _Training Set_
 
 Built with labeled data using a corpus file with ID keys to 5000 sentiment-labeled tweets, which we grab through the [Twitter API](https://developer.twitter.com/en/docs/twitter-api), without saving any additional information as to comply with the Twitter Developer API usage rules. Then it is written to CSV and mapped to numeric values 0 for “negative”, 1 for “neutral”, 2 for “positive”, and 4 for “irrelevant”.
@@ -68,7 +70,7 @@ We rank each K-pop group in order based on ratio of positive to negative tweets 
 
 ![](/images/rankings.png)
 
-*Note that every single group received an overall positive sentiment rating, not surprising given that our subjects are Pop music groups in the entertainment industry! (As opposed to for example, controversial political topics). Also, some groups with names such as “red velvet” are subject to more noise in the data, given that the keyword is closely associated with other common use cases (eg. “red velvet cake”). 
+*Note that every single group received an overall positive sentiment rating, not surprising given that our subjects are Pop music groups in the entertainment industry! (As opposed to for example, controversial political topics). 
 
 
 This insight can be used by players in the media and entertainment industry to measure sentiment, social climate, track popularity over time, and inform numerous business practices such as marketing, promotion, and strategy. 
