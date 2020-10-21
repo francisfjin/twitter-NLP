@@ -26,7 +26,7 @@ _Training Set_
 
 Built with labeled data using a corpus file with ID keys to 5000 sentiment-labeled tweets, which we grab through the Twitter API, without saving any additional information as to comply with the Twitter Developer API usage rules. Then it is written to CSV and mapped to numeric values 0 for “negative”, 1 for “neutral”, 2 for “positive”, and 4 for “irrelevant”.
 
-![](https://github.com/francisfjin/twitter-NLP/blob/gh-pages/images/valuecounts.png)
+![valuecounts](/images/valuecounts.png)
 
 _Pre-Processing_
 
@@ -48,7 +48,7 @@ We achieve scores of about 80% and 80% accuracy for Training and Validation resp
 
 After training the model and getting decent accuracy results, we use it to label the Search Set and generate the proportion of positive, negative, and neutral classified tweets on our keyword in question. In this example, “blackpink”.  Strongly positive!
 
-![](https://github.com/francisfjin/twitter-NLP/blob/gh-pages/images/scores.png)
+![scores](/images/scores.png)
 
 _AutoML_
 
@@ -56,13 +56,13 @@ Google Cloud Platform’s AutoML service is useful for evaluating the viability 
 
 We see the results of AutoML closely mirror that of my original Sequential neural network! Precision and Recall scores of 80.47%, Confusion Matrix below.
 
-![](https://github.com/francisfjin/twitter-NLP/blob/gh-pages/images/automl.png)
+![automl](/images/automl.png)
 
 ## Results
 
 We rank each K-pop group in order based on ratio of positive to negative tweets to create Sentiment Index rankings, and compare to Koreaboo Magazine Rankings. Most groups landed very close to real ranking! This supports our original hypothesis that Twitter sentiment is indicative of overall popularity. 
 
-![](https://github.com/francisfjin/twitter-NLP/blob/gh-pages/images/rankings.png)
+![](/images/rankings.png)
 
 *Note that every single group received an overall positive sentiment rating, not surprising given that our subjects are Pop music groups in the entertainment industry! (As opposed to for example, controversial political topics).
 
