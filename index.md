@@ -19,12 +19,11 @@ A strong overlap will signify the model’s ability to predict a K-pop groups po
 
 ## Methods
 
-_Search set_
 
+_Search set_
 Using [Tweepy API](http://docs.tweepy.org/en/latest/api.html), a query function retrieves the last 3,000 tweets based on the following artist names as keywords: ‘BTS’, ‘TWICE’, ‘Red Velvet’, ‘ITZY’, ‘BLACKPINK’, ‘Mamamoo’, ‘Oh My Girl’, ‘Girls’ Generation’, ‘IZ*ONE’, ‘Lovelyz’. 
 
 _Training Set_
-
 Built with labeled data using a corpus file with ID keys to 5000 sentiment-labeled tweets, which we grab through the [Twitter API](https://developer.twitter.com/en/docs/twitter-api), without saving any additional information as to comply with the Twitter Developer API usage rules. Then it is written to CSV and mapped to numeric values 0 for “negative”, 1 for “neutral”, 2 for “positive”, and 4 for “irrelevant”.
 
 ![valuecounts](/images/valuecounts.png)
