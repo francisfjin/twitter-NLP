@@ -1,12 +1,12 @@
 ## Twitter Sentiment Analysis with Neural Networks: K-pop Industry
 
-![](blackpink.gif)
-
 This project utilizes machine learning and Natural Language Processing to conduct Sentiment Analysis for media & entertainment in Asia, specifically the K-Pop industry which has become one of the [most popular musical genres in the world.](https://www.rollingstone.com/music/music-features/bts-kpop-albums-bands-global-takeover-707139/) 
 
 This insight can be used to measure current social sentiment, climate, popularity, and inform numerous business practices such as marketing, promotion, and strategy, album releases, etc. 
 
 You can read the Final Report [here](https://github.com/francisfjin/twitter-NLP/blob/main/finalreport.pdf), or even better - check out the [webpage!](https://francisfjin.github.io/twitter-NLP/)
+
+![](blackpink.gif)
 
 #### Models 
 - _Keras Neural Network_
