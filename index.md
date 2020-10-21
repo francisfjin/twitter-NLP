@@ -6,7 +6,7 @@
 
 ## Topic
 
-This project seeks to gain insight into trends into the ever-evolving and increasingly popular Korean pop music industry, deemed “K-pop”, which has risen to one of the [top musical genres in the world]((https://www.rollingstone.com/music/music-features/bts-kpop-albums-bands-global-takeover-707139/). By using facets of Natural Language processing and machine learning to conduct [Sentiment Analysis](https://www.google.com/search?q=sentiment+analysis&rlz=1C5CHFA_enUS911US911&oq=sentiment+analysis&aqs=chrome..69i57j69i59l3j69i60l3.1648j0j7&sourceid=chrome&ie=UTF-8) on Twitter data, the analysis measures trends in popularity as well as variations amongst different K-pop groups. 
+This project seeks to gain insight into trends into the ever-evolving and increasingly popular Korean pop music industry, deemed “K-pop”, which has risen to one of the [top musical genres in the world](https://www.rollingstone.com/music/music-features/bts-kpop-albums-bands-global-takeover-707139/). By using facets of Natural Language processing and machine learning to conduct [Sentiment Analysis](https://www.google.com/search?q=sentiment+analysis&rlz=1C5CHFA_enUS911US911&oq=sentiment+analysis&aqs=chrome..69i57j69i59l3j69i60l3.1648j0j7&sourceid=chrome&ie=UTF-8) on Twitter data, the analysis measures trends in popularity as well as variations amongst different K-pop groups. 
 
 Ultimately, the project attempts to test the hypothesis that _Twitter sentiment is a useful signal for the overall popularity and success of a musical artist group._
 
