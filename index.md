@@ -35,15 +35,15 @@ Commonly in Natural language processing endeavors, text must be processed to be 
 
 _Feature Selection_
 
-We fit and transform the data with a TFIDF transformer, term frequency–inverse document frequency, which weights words based on importance in a document. 
+We fit and transform the data with a [TFIDF transformer](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfTransformer.html), term frequency–inverse document frequency, which weights words based on importance in a document. 
 
-Then we use a Glove embedding, an unsupervised learning algorithm for distributed word representation, to create vector representations for words. This is achieved by mapping words into a meaningful space where the distance between words is related to semantic similarity.
+Then we use a [Glove embedding](https://nlp.stanford.edu/projects/glove/), an unsupervised learning algorithm for distributed word representation, to create vector representations for words. This is achieved by mapping words into a meaningful space where the distance between words is related to semantic similarity.
 
 ## Models
 
 _Keras Neural Network_
 
-A sequential neural network from Keras library is used for multi-label classification on the sentiment labels 0, 1, and 2. A single inner layer, early stopping, and Dropout are used in the neural network with a SoftMax activation layer in the output, and loss set to categorical cross-entropy. 
+A sequential neural network from [Keras library](https://keras.io/) is used for multi-label classification on the sentiment labels 0, 1, and 2. A single inner layer, early stopping, and Dropout are used in the neural network with a SoftMax activation layer in the output, and loss set to categorical cross-entropy. 
 
 We achieve scores of about 80% and 80% accuracy for Training and Validation respectively.
 
@@ -53,7 +53,7 @@ After training the model and getting decent accuracy results, we use it to label
 
 _AutoML_
 
-Google Cloud Platform’s AutoML service is useful for evaluating the viability of a model for NLP, and depending on the use case can generate very sufficient ready-to-deploy machine learning models. In our case, the training set is published to AutoML to train an NLP model for Sentiment Analysis for the labels: 0 for negative, 1 for positive, 2 for neutral.
+[Google Cloud Platform’s AutoML service](https://cloud.google.com/automl) is useful for evaluating the viability of a model for NLP, and depending on the use case can generate very sufficient ready-to-deploy machine learning models. In our case, the training set is published to AutoML to train an NLP model for Sentiment Analysis for the labels: 0 for negative, 1 for positive, 2 for neutral.
 
 We see the results of AutoML closely mirror that of my original Sequential neural network! Precision and Recall scores of 80.47%, Confusion Matrix below.
 
@@ -61,11 +61,12 @@ We see the results of AutoML closely mirror that of my original Sequential neura
 
 ## Results
 
-We rank each K-pop group in order based on ratio of positive to negative tweets to create Sentiment Index rankings, and compare to Koreaboo Magazine Rankings. Most groups landed very close to real ranking! This supports our original hypothesis that Twitter sentiment is indicative of overall popularity. 
+We rank each K-pop group in order based on ratio of positive to negative tweets to create Sentiment Index rankings, and compare to [Koreaboo Magazine Rankings](https://www.koreaboo.com/news/top-30-popular-kpop-groups-korea-right-now/). Most groups landed very close to real ranking! This supports our original hypothesis that Twitter sentiment is indicative of overall popularity. 
 
 ![](/images/rankings.png)
 
-*Note that every single group received an overall positive sentiment rating, not surprising given that our subjects are Pop music groups in the entertainment industry! (As opposed to for example, controversial political topics).
+*Note that every single group received an overall positive sentiment rating, not surprising given that our subjects are Pop music groups in the entertainment industry! (As opposed to for example, controversial political topics). Also, some groups with names such as “red velvet” are subject to more noise in the data, given that the keyword is closely associated with other common use cases (eg. “red velvet cake”). 
 
-This insight can be used by players in the media and entertainment industry to measure sentiment, social climate, popularity, and inform numerous business practices such as marketing, promotion, and strategy. 
+
+This insight can be used by players in the media and entertainment industry to measure sentiment, social climate, track popularity over time, and inform numerous business practices such as marketing, promotion, and strategy. 
 
