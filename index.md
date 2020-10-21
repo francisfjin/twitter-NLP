@@ -56,7 +56,7 @@ After training the model and getting decent accuracy results, we use it to label
 
 _AutoML_
 
-[Google Cloud Platform’s AutoML service](https://cloud.google.com/automl) is useful for evaluating the viability of a model for NLP, and depending on the use case can generate very sufficient ready-to-deploy machine learning models. In our case, the training set is published to AutoML to train an NLP model for Sentiment Analysis for the labels: 0 for negative, 1 for positive, 2 for neutral.
+[Google Cloud Platform’s AutoML service](https://cloud.google.com/automl) is useful for evaluating the viability of a model for NLP, and depending on the use case can generate very sufficient ready-to-deploy machine learning models. In our case, the training set is published to AutoML to train an NLP model for Sentiment Analysis for the labels: 0 for negative, 1 for neutral, 2 for positive.
 
 We see the results of AutoML closely mirror that of my original Sequential neural network! Precision and Recall scores of 80.47%, Confusion Matrix below.
 
