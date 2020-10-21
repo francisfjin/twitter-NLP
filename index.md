@@ -48,6 +48,8 @@ A sequential neural network from [Keras library](https://keras.io/) is used for 
 
 We achieve scores of about 80% and 80% accuracy for Training and Validation respectively.
 
+![trainingaccuracy](/images/trainingaccuracy.png)
+
 After training the model and getting decent accuracy results, we use it to label the Search Set and generate the proportion of positive, negative, and neutral classified tweets on our keyword in question. In this example, “blackpink”.  Strongly positive!
 
 ![scores](/images/scores.png)
