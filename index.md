@@ -2,6 +2,7 @@
 ## By Francis Jin 
 
 ![blackpink](/images/blackpink.jpg)
+[Source](https://www.amazon.ca/Blackpink-notebook-Jisoo-Jennie-Journal/dp/1675127433)
 
 ## Topic
 
