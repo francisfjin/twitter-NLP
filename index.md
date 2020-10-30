@@ -1,7 +1,7 @@
 # Twitter Sentiment Analysis with Neural Networks: K-pop Industry
 ## By Francis Jin 
 
-![brain](/images/nn.png)
+![blackpink](/images/blackpink.gif)
 ![bts](/images/bts.png)
 
 ## Topic
