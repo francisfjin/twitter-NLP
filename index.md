@@ -2,7 +2,6 @@
 ## By Francis Jin 
 
 ![blackpink](/images/blackpink.gif)
-![nn](images/nn.png)
 
 ## Topic
 
