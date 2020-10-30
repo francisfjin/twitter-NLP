@@ -9,7 +9,7 @@ This project seeks to gain insight into trends into the ever-evolving and increa
 
 Ultimately, the project attempts to test the hypothesis that _Twitter sentiment is a useful signal for the overall popularity and success of a musical artist group._
 
-Main script [here](https://github.com/francisfjin/twitter-NLP/blob/main/Twitter_public.ipynb)
+Main script [here.](https://github.com/francisfjin/twitter-NLP/blob/main/Twitter_public.ipynb)
 ## Metric
 
 The metric we will use to test this hypothesis is the overall score the model achieves, when comparing its rankings of the top 10 K-pop groups right now to the ranking order done by [Koreaboo](https://www.koreaboo.com/news/top-30-popular-kpop-groups-korea-right-now/), one of the largest online K-pop content media platforms. 
