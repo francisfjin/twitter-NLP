@@ -1,7 +1,7 @@
 ## Twitter Sentiment Analysis with Neural Networks: K-pop Industry
 
 
-**Check out the official [webpage!](https://francisfjin.github.io/twitter-NLP/)** 
+Check out the official **[webpage!](https://francisfjin.github.io/twitter-NLP/)** 
 
 <img src="https://github.com/francisfjin/twitter-NLP/blob/main/images/nn.png" width="30%">
 
