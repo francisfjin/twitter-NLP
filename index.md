@@ -3,8 +3,6 @@
 
 ![blackpink](/images/blackpink.gif)
 
-![bts](/images/bts.png)
-
 ## Topic
 
 This project seeks to gain insight into trends into the ever-evolving and increasingly popular Korean pop music industry, deemed “K-pop”, which has risen to one of the [top musical genres in the world](https://www.rollingstone.com/music/music-features/bts-kpop-albums-bands-global-takeover-707139/). By using facets of Natural Language processing and machine learning to conduct [Sentiment Analysis](https://www.google.com/search?q=sentiment+analysis&rlz=1C5CHFA_enUS911US911&oq=sentiment+analysis&aqs=chrome..69i57j69i59l3j69i60l3.1648j0j7&sourceid=chrome&ie=UTF-8) on Twitter data, the analysis measures trends in popularity as well as variations amongst different K-pop groups. 
@@ -71,8 +69,10 @@ We rank each K-pop group in order based on ratio of positive to negative tweets 
 
 ![](/images/rankings.png)
 
+
 *Note that every single group received an overall positive sentiment rating, not surprising given that our subjects are Pop music groups in the entertainment industry! (As opposed to for example, controversial political topics). 
 
 
 This insight can be used by players in the media and entertainment industry to measure sentiment, social climate, track popularity over time, and inform numerous business practices such as marketing, promotion, and strategy. 
 
+![bts](/images/bts.png)
