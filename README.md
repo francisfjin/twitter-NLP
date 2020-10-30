@@ -3,7 +3,7 @@
 
 **Check out the official [webpage!](https://francisfjin.github.io/twitter-NLP/)** 
 
-<img src="https://github.com/francisfjin/twitter-NLP/blob/main/nn.png" width="30%">
+<img src="https://github.com/francisfjin/twitter-NLP/blob/main/images/nn.png" width="30%">
 
 This project utilizes machine learning and Natural Language Processing to conduct [Sentiment Analysis](https://www.google.com/search?q=sentiment+analysis&rlz=1C5CHFA_enUS911US911&oq=sentiment+analysis&aqs=chrome..69i57j69i59l3j69i60l3.1648j0j7&sourceid=chrome&ie=UTF-8) on Twitter data for Media & Entertainment in Asia, specifically the K-Pop industry which has become one of the [most popular musical genres in the world.](https://www.rollingstone.com/music/music-features/bts-kpop-albums-bands-global-takeover-707139/) 
 
@@ -22,7 +22,7 @@ Keras Neural Network: a TFIDF transformation is performed on the pre-processed t
 AutoML: Writes training set to CSV for Google AutoML required format. Then in Google Cloud Platform an [AutoML model](https://cloud.google.com/automl) for NLP Sentiment Analysis can be trained on the set. For predictions the search set of tweets is exported to individual txt files as per AutoML's [BatchPredict input file requirements](https://cloud.google.com/natural-language/automl/docs/predict?authuser=3), it also writes a CSV of the keys in the required format. 
 
 
-<img src="https://github.com/francisfjin/twitter-NLP/blob/main/automl.png" width="50%">
+<img src="https://github.com/francisfjin/twitter-NLP/blob/main/images/automl.png" width="50%">
 
 
 [AutoMLpythonclient_public.ipynb](https://github.com/francisfjin/twitter-NLP/blob/main/AutoMLpythonclient_public.ipynb) is the Python client to run the deployed model. Requires input GCP credentials, and test files must saved to GCP storage bucket before running predictions.   
