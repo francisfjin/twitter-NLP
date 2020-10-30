@@ -78,4 +78,5 @@ We rank each K-pop group in order based on ratio of positive to negative tweets 
 This insight can be used by players in the media and entertainment industry to measure sentiment, social climate, track popularity over time, and inform numerous business practices such as marketing, promotion, and strategy. 
 
 ![bts](/images/bts.png)
+
 [source](https://www.nme.com/blogs/nme-blogs/coolest-cutest-oddest-moments-bts-world-mobile-game-2517273)
