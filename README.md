@@ -21,7 +21,7 @@ Training data is then fed into two models: Keras Neural Network and Google AutoM
 
 Keras Neural Network: a TFIDF transformation is performed on the pre-processed training set along with Glove embedding, then fed into a Sequential Keras model with Dropout, to yield (~88%/81%) accuracy scores on training/validation sets!
 
-AutoML: Writes training set to CSV for Google AutoML required format. Then in Google Cloud Platform an [AutoML model](https://cloud.google.com/automl) for NLP Sentiment Analysis can be trained on the set. For predictions the search set of tweets is exported to individual txt files as per AutoML's [BatchPredict input file requirements](https://cloud.google.com/natural-language/automl/docs/predict?authuser=3), it also writes a CSV of the keys in the required format. 
+Google AutoML: Writes training set to CSV for Google AutoML required format. Then in Google Cloud Platform an [AutoML model](https://cloud.google.com/automl) for NLP Sentiment Analysis can be trained on the set. For predictions the search set of tweets is exported to individual txt files as per AutoML's [BatchPredict input file requirements](https://cloud.google.com/natural-language/automl/docs/predict?authuser=3), it also writes a CSV of the keys in the required format. 
 
 
 <img src="https://github.com/francisfjin/twitter-NLP/blob/main/images/automl.png" width="50%">
