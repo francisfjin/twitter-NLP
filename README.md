@@ -9,13 +9,15 @@ This project utilizes machine learning and Natural Language Processing to conduc
 
 This insight can be used to measure current social sentiment, climate, popularity, and inform numerous business practices such as marketing, promotion, and strategy, album releases, etc. Final Report [here](https://github.com/francisfjin/twitter-NLP/blob/main/finalreport.pdf).
 
-#### Models 
-- _Keras Neural Network_
-- _Google AutoML_
+#### Data
 
 The main script [Twitter_public.ipynb](https://github.com/francisfjin/twitter-NLP/blob/main/Twitter_public.ipynb) uses Tweepy API to search for a user-defined set of tweets given keyword of your choosing. Then it creates a training set on labeled data using an awesome corpus file from Niek Sanders [here](https://github.com/karanluthra/twitter-sentiment-training/blob/master/corpus.csv), with ID keys to 5000 sentiment-labeled tweets, which we then grab through the Twitter API as to comply with their Developer API usage rules. Pre-processing is done using Natural Language Processing libraries: spacy, nltk, re.
 
 Training data is then fed into two models: Keras Neural Network and Google AutoML.
+
+#### Models 
+- _Keras Neural Network_
+- _Google AutoML_
 
 Keras Neural Network: a TFIDF transformation is performed on the pre-processed training set along with Glove embedding, then fed into a Sequential Keras model with Dropout, to yield (~88%/81%) accuracy scores on training/validation sets!
 
