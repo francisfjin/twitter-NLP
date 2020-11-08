@@ -14,7 +14,7 @@ Ultimately, the project attempts to test the hypothesis that _Twitter sentiment 
 Main script [here.](https://github.com/francisfjin/twitter-NLP/blob/main/Twitter_public.ipynb)
 ## Metric
 
-The metric we will use to test this hypothesis is the overall score the model achieves, when comparing its rankings of the top 10 K-pop groups right now to the ranking order done by [Koreaboo](https://www.koreaboo.com/news/top-30-popular-kpop-groups-korea-right-now/), one of the largest online K-pop content media platforms. 
+The metric we will use to test this hypothesis is the overall score the model achieves, when comparing its rankings of the top 10 K-pop groups right now to the ranking order done by [Koreaboo](https://www.koreaboo.com/news/top-30-popular-kpop-groups-korea-right-now/), one of the largest online K-pop content media platforms. Note, how K-pop groups are trained and managed has some [inherent standardization](http://kpopherald.koreaherald.com/view.php?ud=201901181819018493571_2), which lends some standardization to our comparison of rankings. 
 
 A strong overlap will signify the model’s ability to predict a K-pop groups popularity using Twitter sentiment, and overall popularity is known to be strongly correlated with the success of a musical group. 
 
